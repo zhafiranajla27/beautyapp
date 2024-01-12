@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/peach"
+    tools:context=".Activity.DetailActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/backBtn"
+                    android:layout_width="41dp"
+                    android:layout_height="72dp"
+                    app:srcCompat="@drawable/arrow_back"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="6dp" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Details"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/favBtn"
+                    app:layout_constraintHorizontal_bias="0.531"
+                    app:layout_constraintStart_toEndOf="@+id/backBtn"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/favBtn"
+                    android:layout_width="38dp"
+                    android:layout_height="63dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.949"
+                    app:layout_constraintStart_toEndOf="@+id/backBtn"
+                    app:srcCompat="@drawable/btn_3"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="6dp" />
+
+                <TextView
+                    android:id="@+id/brandTxt"
+                    android:layout_width="304dp"
+                    android:layout_height="39dp"
+                    android:elevation="3dp"
+                    android:gravity="center"
+                    android:text="The Originote Lip Oil Serum"
+                    android:textColor="@color/pink"
+                    android:textSize="22dp"
+                    android:textStyle="bold|italic"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="44dp"
+                    tools:layout_editor_absoluteY="371dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bottomwhite"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="449dp" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="337dp"
+        android:layout_height="292dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/imageView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView4"
+        app:srcCompat="@drawable/lip_serum" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="390dp"
+        android:layout_height="65dp"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView4">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button2"
+            style="@android:style/Widget.Button"
+            android:layout_width="182dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/babypink"
+            android:drawableStart="@drawable/btn_2"
+            android:paddingStart="16dp"
+            android:text="Add to cart"
+            android:textColor="@color/pink"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="113dp"
+            android:layout_height="36dp"
+            android:text="Rp.0"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView29" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="114dp"
+            android:layout_height="30dp"
+            android:text="Total Price"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="383dp"
+        android:layout_height="212dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView18"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="141dp"
+            android:layout_height="40dp"
+            android:text="Rp.34.000"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="90dp" />
+
+        <TextView
+            android:id="@+id/pluasBtn"
+            android:layout_width="40dp"
+            android:layout_height="42dp"
+            android:background="@color/babypink"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/grey"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="85dp" />
+
+        <TextView
+            android:id="@+id/minusBtn"
+            android:layout_width="36dp"
+            android:layout_height="38dp"
+            android:background="@color/babypink"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="@color/grey"
+            android:textSize="34dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="212dp"
+            tools:layout_editor_absoluteY="87dp" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="36dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/pluasBtn"
+            app:layout_constraintStart_toEndOf="@+id/minusBtn"
+            tools:layout_editor_absoluteY="85dp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:numStars="5"
+            android:progress="4"
+            android:progressTint="@color/blue"
+            android:rating="4"
+            android:stepSize="1"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="150dp" />
+
+        <TextView
+            android:id="@+id/ratingTxt"
+            android:layout_width="37dp"
+            android:layout_height="39dp"
+            android:layout_weight="1"
+            android:text="(4)"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="208dp"
+            tools:layout_editor_absoluteY="156dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView31" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lip Treatment Serum Bibir. Melembabkan Mencerahkan Warna Bibir With Ceramide, Vitamin C"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Similar Product"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/similarView"
+        android:layout_width="388dp"
+        android:layout_height="74dp"
+        android:clipToPadding="false"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+</androidx.constraintlayout.widget.ConstraintLayout>
